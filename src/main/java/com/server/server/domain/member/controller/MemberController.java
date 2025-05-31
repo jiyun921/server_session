@@ -16,7 +16,7 @@ public class MemberController {
     private final MemberRepository memberRepository;
 
     @GetMapping
-    @Operation(summary = "Get allmember")
+    @Operation(summary = "Get all member")
     public List<Member> findAll() {
         return memberRepository.findAll();
     }
